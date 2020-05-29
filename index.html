@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Сапер</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="my.css">
+</head>
+
+<body>
+
+   <div class="bodyOfGame">
+      <div class="header">
+         <div class="burger">
+            <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+            <label for="checkbox1">
+               <div class="hamburger hamburger1">
+                  <span class="bar bar1"></span>
+                  <span class="bar bar2"></span>
+                  <span class="bar bar3"></span>
+                  <span class="bar bar4"></span>
+               </div>
+            </label>
+         </div>
+         <div class="header-time">
+            <div>Time</div>
+            <div class="time"></div>
+         </div>
+         <div class="header-bomb">
+            <div>Bomb</div>
+            <div class="bombNumber"></div>
+         </div>
+         <div class="restart">
+            <span></span><span></span>
+         </div>
+      </div>
+      <div class="body">
+         <div class="field ">
+            <div id="table"></div>
+            <div class="finish"></div>
+         </div>
+         <div class="menu">
+            <form id="form" class="form hide">
+               <h2><b>Нова игра</b></h2>
+               <label for="width">Количество по ширине</label>
+               <input id="sas" type="number" name="width" value="10" min="10" max="25" step="1"><br>
+               <label for="height">Количество по висоте</label>
+               <input id="height" type="number" name="height" value="5" min="10" max="25" step="1"><br>
+               <span>Сложность уровня:</span>
+               <input type="radio" id="l10" name="level" value="10" checked>
+               <label for="l10">легкий </label> 
+               <input type="radio" id="l15" name="level" value="15">
+               <label for="l15">средний</label> 
+               <input type="radio" id="l20" name="level" value="20">
+               <label for="l20">сложный</label> <br><br>
+               <input id="closeForm" type="submit" value="Сохранить">
+
+            </form>
+         </div>
+      </div>
+   </div>
+
+
+
+
+
+
+   <script src="my.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+.bodyOfGame {
+   height: 540px;
+   width: 500px;
+   border: 1px solid red;
+   margin: 0 auto;
+}
+
+.header {
+   display: flex;
+
+   justify-content: space-between;
+}
+
+.burger {
+   margin-left: 10px;
+}
+
+.header-time,
+.header-bomb {
+   padding-top: 10px;
+   display: flex;
+}
+
+.time,
+.bombNumber {
+   border: 1px solid red;
+   height: 20px;
+   width: 40px;
+}
+
+.body {
+   height: 500px;
+   display: flex;
+   justify-content: center;
+
+}
+
+.field {
+   position: relative;
+   margin: auto 0;
+}
+
+.table {
+
+   width: 100%;
+   height: 100%;
+}
+
+.finish {
+   font-size: 25px;
+   position: absolute;
+   top: -60px;
+   left: 150px;
+   opacity: 0.9;
+   ;
+}
+
+.line {
+   display: flex;
+   justify-content: space-between;
+}
+
+.elem {
+   font-size: 16px;
+   font-weight: bold;
+   text-align: center;
+   color: blue;
+   border: 1px solid yellow;
+   display: inline-block;
+   height: 16px;
+   width: 16px;
+   background: rgb(255, 255, 255);
+}
+
+.bomb {
+   background: green;
+}
+
+
+
+.form input,
+.form label {   
+   margin: 5px;
+}
+.form input{
+   background: yellow;
+   padding: 4px;
+}
+
+
+
+/* HAMBURGER */
+.visuallyHidden {
+   position: absolute;
+   overflow: hidden;
+   clip: rect(0 0 0 0);
+   height: 1px;
+   width: 1px;
+   margin: -1px;
+   padding: 0;
+   border: 0;
+}
+
+.hamburger {
+   margin: 0 auto;
+   margin-top: 10px;
+   width: 30px;
+   height: 30px;
+   position: relative;
+}
+
+.hamburger .bar {
+   padding: 0;
+   width: 30px;
+   height: 4px;
+   background-color: maroon;
+   display: block;
+   border-radius: 4px;
+   transition: all 0.4s ease-in-out;
+   position: absolute;
+}
+
+.bar1 {
+   top: 0;
+}
+
+.bar2,
+.bar3 {
+   top: 13.5px;
+}
+
+.bar3 {
+   right: 0;
+}
+
+.bar4 {
+   bottom: 0;
+}
+
+.checkbox1:checked+label>.hamburger1>.bar1 {
+   transform: rotate(45deg);
+   transform-origin: 5%;
+   width: 41px
+}
+
+.checkbox1:checked+label>.hamburger1>.bar2 {
+   transform: translateX(-40px);
+   background-color: transparent;
+}
+
+.checkbox1:checked+label>.hamburger1>.bar3 {
+   transform: translateX(40px);
+   background-color: transparent;
+}
+
+.checkbox1:checked+label>.hamburger1>.bar4 {
+   transform-origin: 5%;
+   transform: rotate(-45deg);
+   width: 41px;
+}
+
+
+
+
+
+.bg {
+   background: blue;
+}
+
+.flag {
+   color: transparent;
+   background: url('./img/red-flag.png')0 0/100% 100% no-repeat;
+}
+
+.flag2 {
+   color: transparent;
+   background: url('./img/red-flag2.png')0 0/100% 100% no-repeat;
+}
+
+.hide {
+   display: none;
+}
